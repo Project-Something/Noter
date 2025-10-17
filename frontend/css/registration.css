@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("background-from-the-drops-vector-954659.jpg") no-repeat center center/cover; 
+    backdrop-filter: blur(1px);
+}
+
+
+.container {
+    width: 350px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    color: #fff;
+    text-align: center;
+}
+
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.signform {
+    position: relative;
+    margin: 25px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.signform input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+}
+
+.signform label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+
+.signform input:focus ~ label,
+.signform input:valid ~ label {
+    top: -5px;
+    font-size: 12px;
+    color: #ffcc00;
+}
+
+
+.signform i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+
+.container p {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #ccc;
+    text-align: left;
+}
+.container p input {
+    margin-right: 8px;
+}
+
+
+#btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+#btn:hover {
+    background: #ffcc00;
+    color: #000;
+}
