@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f7fb;
+  color: #222;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+url(style.css)
+.profile-icon {
+  font-size: 24px;
+}
+
+.search-box {
+  flex: 1;
+  margin: 0 16px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+
+
+
+/* Main Layout */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  padding: 24px;
+}
+
+/* Notes */
+.notes-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-card {
+  background: #f6f8ff;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.note-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.note-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: #dfe8ff;
+  color: #337eff;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.view-all {
+  background: #e7f0ff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0;
+}
+
+/* Right Section */
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ask-doubt, .lecture-watchlist {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.chat-box {
+  background: #f6f8ff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.input-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+/* video🌚 Watchlist */
+.lecture-card {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.lecture-card img {
+  width: 120px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.lecture-info h4 {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+/* buttons 👽*/
+.add-btn {
+  background: #337eff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.send-btn {
+  background: #337eff;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  padding: 8px 10px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.btn-small.delete {
+  background: #ff4c4c;
+}
+.btn-small {
+  background: #337eff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.nav-buttons .btn {
+  background: #e7f0ff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* buttons hover man kara to hata sakta ha 👽*/
+.nav-buttons .btn:hover{
+  background-color: #337eff;
+  color: #ccc;
+}
+.btn-small:hover{
+  background-color:rgb(11, 235, 231);
+  color: #ccc;
+}
+.btn-small.delete:hover {
+  background: #ff4c4c;
+  color: #a50e0e;
+}
+.send-btn:hover {
+  background: #0119f6;
+  color: #b3b0b0;
+} 
+.add-btn:hover{
+  background-color: chartreuse;
+  color: #b3b0b0;
+}
+
